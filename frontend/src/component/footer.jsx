@@ -11,10 +11,10 @@ const Footer = () => {
         </p>
         <div className="footer-links">
   
-          <a href="/about" className="footer-link">
+          <a href="https://github.com/pankajj48/GitPulse.git" className="footer-link">
             About
           </a>
-          <a href="/contact" className="footer-link">
+          <a href="https://my-portfolio-dlfq.onrender.com/" className="footer-link">
             Contact
           </a>
         </div>

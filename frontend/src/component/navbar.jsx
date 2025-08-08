@@ -11,7 +11,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="navbar-links">
-                    <a className="nav-link" href="#about">About</a>
+                    <a className="nav-link" href="https://github.com/pankajj48/GitPulse.git">About</a>
                     <a className="nav-link" href="#features">Features</a>
                 </div>
             </div>

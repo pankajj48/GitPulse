@@ -6,6 +6,8 @@ import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Navbar from './navbar';
 import Footer from './footer';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
 // --- Helper Functions ---
 const getLanguage = (path) => {
     const extension = path.split('.').pop();
@@ -256,7 +258,7 @@ function Home() {
         setLanguages(null);
         setSearchTerm('');
         try {
-            const response = await axios.post('/api/visualize', { repoUrl });
+            const response = await axios.post(`${API_BASE_URL}/api/visualize`, { repoUrl });
             const { ownerInfo, languages, nodes, links, tree } = response.data;
             if (ownerInfo && nodes && links && tree) {
                 setOwnerInfo(ownerInfo);
@@ -302,7 +304,7 @@ function Home() {
         setIsSummaryLoading(true);
         setSummary('');
         try {
-            const response = await axios.post('/api/summarize', { code });
+            const response = await axios.post(`${API_BASE_URL}/api/summarize`, { code });
             setSummary(response.data.summary);
         } catch (err) {
             const errorMessage = err.response?.data?.error || 'Failed to get summary.';
