@@ -352,7 +352,7 @@ function Home() {
                 <header className="header">
 
                     <div className="homelogo">
-                        <img src="./src/assets/homelogo.png" alt="logo" width={120} height={120}/>
+                        <img src="/homelogo.png" alt="logo" width={120} height={120}/>
                         <h1 className="title">GitPulse</h1>
                     </div>
                     

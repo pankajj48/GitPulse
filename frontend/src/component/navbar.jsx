@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <div className="navbar-brand">
                     <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
-                        <img src="./src/assets/navlogo.png" alt="navlogo" />
+                        <img src="/homelogo.png" alt="logo"/>
                     </Link>
                 </div>
                 <div className="navbar-links">
