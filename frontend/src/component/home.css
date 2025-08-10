@@ -781,6 +781,7 @@ body {
 }
 
 /* General Mobile Styles (up to 768px) */
+
 @media (max-width: 768px) {
   .content-wrapper { padding: 1.5rem 1rem; }
   .title { font-size: 2rem; }
@@ -790,6 +791,21 @@ body {
     flex-direction: column;
     gap: 0.75rem;
   }
+    .results-grid {
+    display: block; /* Remove grid layout on small screens */
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+
+  .gh-panel {
+    width: 100%;
+    box-sizing: border-box; /* Prevent padding from overflowing */
+  }
+
+  .graph-container {
+    width: 100%; /* Prevent graph from exceeding width */
+    overflow-x: auto; /* If graph is larger, scroll inside it */
+  }
+
   .repo-input,
   .visualize-button {
     font-size: 1rem;
@@ -823,6 +839,7 @@ body {
 
 /* Small Mobile Styles (up to 480px) */
 @media (max-width: 480px) {
+
   .title { font-size: 1.5rem; }
   .subtitle { font-size: 0.95rem; }
 
@@ -830,12 +847,6 @@ body {
   .visualize-button {
     font-size: 0.95rem;
   }
-
-  .main-content{
-    max-width: 80%;
-  }
-
-  .sidebar-content{ max-width: 80%;}
 
   .feature-title { font-size: 1rem; }
   .feature-description { font-size: 0.85rem; }
