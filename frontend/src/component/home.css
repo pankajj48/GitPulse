@@ -831,6 +831,12 @@ body {
     font-size: 0.95rem;
   }
 
+  .main-content{
+    max-width: 80%;
+  }
+
+  .sidebar-content{ max-width: 80%;}
+
   .feature-title { font-size: 1rem; }
   .feature-description { font-size: 0.85rem; }
   .owner-name { font-size: 1.25rem; }
@@ -853,6 +859,6 @@ body {
     padding: 0.4rem 0.75rem;
   }
 
-  .footer { padding: 1.5rem 1rem; }
+  .footer { padding: 1.5rem 1rem;  }
   .footer-links { justify-content: center; flex-wrap: wrap; }
 }
